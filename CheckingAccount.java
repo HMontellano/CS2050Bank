@@ -22,4 +22,14 @@ public class CheckingAccount extends Account {
     public void setOverdraftLimit(double overdraftLimit) {
         this.overdraftLimit = overdraftLimit;
     }
+
+    @Override
+    public String toString() {
+        return "CheckingAccount{" +
+                "accountNumber='" + getAccountNumber() + '\'' +
+                ", accountHolder='" + getAccountHolder() + '\'' +
+                ", balance=" + getBalance() +
+                ", overdraftLimit=" + overdraftLimit +
+                '}';
+    }
 }
